@@ -12,8 +12,7 @@ const getStyles = (props, context) => {
       marginTop: -14,
       marginLeft: 14 + 11, // padding + 1/2 icon
       paddingLeft: 24 - 11 + 8,
-      paddingRight: 16,
-      overflow: 'hidden',
+      paddingRight: 16
     },
   };
 
@@ -93,7 +92,7 @@ class StepContent extends Component {
 
     return (
       <div style={prepareStyles(Object.assign(styles.root, style))} {...other}>
-        {React.createElement(transition, transitionProps, <div style={{overflow: 'hidden'}}>{children}</div>)}
+        {React.createElement(transition, transitionProps, <div style={{overflow: 'visible'}}>{children}</div>)}
       </div>
     );
   }
